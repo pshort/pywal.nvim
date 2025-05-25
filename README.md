@@ -48,7 +48,12 @@ To active the theme call this in your neovim config:
 ```lua
 local pywal = require('pywal')
 
-pywal.setup()
+pywal.setup() -- Default configuration
+
+-- Or with options
+pywal.setup({
+  transparent_bg = true -- Enable transparent background
+})
 ```
 
 Or with vim script:
