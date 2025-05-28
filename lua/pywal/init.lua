@@ -9,7 +9,6 @@ function M.set_colors(opts)
   local colors = core.get_colors()
   vim.opt.termguicolors = true
   highlights.highlight_all(colors, opts)
-  vim.notify("new colors set", vim.log.levels.INFO)
 end
 
 function M.watch_file(filepath)
@@ -51,7 +50,6 @@ function M.watch_file(filepath)
     return false
   end
 
-  vim.notify("Started watching: " .. expanded_path, vim.log.levels.INFO)
   return true
 end
 
